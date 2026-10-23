@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ByteXL Navbar</title>
+
+  <style>
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(237, 227, 227);
+}
+
+.navbar {
+    margin-top: 163px;
+    background-color: white;
+    width: 100%;
+}
+
+
+.top-nav {
+    min-height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 38px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.logo {
+    color: #219653;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main-links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.main-links a {
+    text-decoration: none;
+    color: #17212b;
+    font-size: 18px;
+    font-weight: 500;
+
+    background-color: #f0f0f0;
+    padding: 12px 18px;
+    border-radius: 6px;
+    white-space: nowrap;
+
+   
+}
+
+
+.main-links a:hover {
+    background-color: #dedede;
+}
+
+
+.sign-in {
+    background-color: #172630;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    padding: 14px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sign-in:hover {
+    background-color: #294454;
+}
+
+.tusha {
+    min-height: 59px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    padding: 12px 20px;
+    flex-wrap: wrap;
+}
+
+.tusha a {
+    text-decoration: none;
+    color: #17212b;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.tusha a:hover {
+    color: #219653;
+}
+
+
+@media (max-width: 900px) {
+    .navbar {
+        margin-top: 40px;
+    }
+
+    .top-nav {
+        padding: 20px;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .main-links {
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .main-links a {
+        font-size: 16px;
+        padding: 10px 12px;
+    }
+
+    .tusha {
+        gap: 20px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .navbar {
+        margin-top: 20px;
+    }
+
+    .top-nav {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-links {
+        justify-content: center;
+    }
+
+    .sign-in {
+        padding: 10px 18px;
+    }
+
+    .tusha a {
+        font-size: 14px;
+    }
+}
+
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+
+    <nav class="top-nav">
+      <div class="logo">ByteXL</div>
+
+      <div class="main-links">
+        <a href="#">Courses</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Practice</a>
+        <a href="#">Jobs</a>
+      </div>
+
+      <button class="sign-in">Sign In</button>
+    </nav>
+
+    <nav class="tusha">
+      <a href="#">DSA</a>
+      <a href="#">Practice Problems</a>
+      <a href="#">C</a>
+      <a href="#">C++</a>
+      <a href="#">Java</a>
+      <a href="#">Python</a>
+      <a href="#">JavaScript</a>
+      <a href="#">Data Science</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">Courses</a>
+      <a href="#">Linux</a>
+      <a href="#">DevOps</a>
+    </nav>
+
+  </header>
+
+</body>
+</html>
+
